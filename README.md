@@ -1,104 +1,129 @@
-# CRYPTOWL 🦉
+# CRYPTOWL 🦉🔒
 
-![CRYPTOWL](https://img.shields.io/badge/Version-1.0.0-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg) ![Flask](https://img.shields.io/badge/Flask-1.1.2-orange.svg)
+![CRYPTOWL Logo](https://example.com/logo.png)
 
-CRYPTOWL is a simple web application written in Python (Flask) for sending and reading encrypted messages. This project aims to provide a beginner-friendly introduction to web development and cryptography using Flask and MariaDB. 
+Welcome to **CRYPTOWL**, a simple web application designed for sending and reading encrypted messages. Built with Python and Flask, CRYPTOWL offers a user-friendly interface to ensure your communications remain private and secure. 
 
 ## Table of Contents
 
-1. [Features](#features)
-2. [Technologies Used](#technologies-used)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Links](#links)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
 ## Features
 
-- **User Authentication**: Secure login and registration system.
-- **Message Encryption**: Send and receive messages securely.
-- **User-friendly Interface**: Clean and simple design for easy navigation.
-- **Database Integration**: Uses MariaDB for storing user data and messages.
-- **Responsive Design**: Works well on both desktop and mobile devices.
+- **User Authentication**: Secure login and registration to protect user data.
+- **Message Encryption**: All messages are encrypted to ensure privacy.
+- **Responsive Design**: Works on all devices, providing a seamless experience.
+- **Real-time Messaging**: Send and receive messages instantly.
+- **Simple Interface**: Easy to navigate, even for beginners.
 
 ## Technologies Used
 
-- **Python 3**: The programming language used for the backend.
-- **Flask**: A lightweight WSGI web application framework.
-- **MariaDB**: A popular open-source database.
-- **HTML/CSS**: For building the user interface.
-- **JavaScript**: For client-side functionality.
+CRYPTOWL leverages a range of technologies to deliver a robust experience:
+
+- **Python**: The primary programming language.
+- **Flask**: The web framework used for building the application.
+- **SQL**: For database management.
+- **HTML/CSS**: For front-end development.
+- **JavaScript**: For client-side interactivity.
+- **Cryptography Libraries**: For secure message encryption and decryption.
 
 ## Installation
 
-To set up CRYPTOWL on your local machine, follow these steps:
+To get started with CRYPTOWL, follow these steps:
 
 1. **Clone the Repository**:
-
    ```bash
-   git clone 
+   git clone https://github.com/yewonnie/CRYPTOWL.git
    cd CRYPTOWL
    ```
 
-2. **Create a Virtual Environment**:
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install Required Packages**:
-
+2. **Install Dependencies**:
+   Ensure you have Python and pip installed. Then, run:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Set Up the Database**:
+3. **Set Up the Database**:
+   Initialize the database by running:
+   ```bash
+   python create_db.py
+   ```
 
-   Ensure you have MariaDB installed. Create a database and run the SQL scripts provided in the `database` folder to set up the necessary tables.
-
-5. **Run the Application**:
-
+4. **Run the Application**:
+   Start the Flask server:
    ```bash
    python app.py
    ```
 
-   Visit `http://127.0.0.1:5000` in your web browser to access the application.
+5. **Access the Application**:
+   Open your web browser and navigate to `http://127.0.0.1:5000`.
 
 ## Usage
 
-Once you have installed and run the application, you can start using CRYPTOWL:
+Once you have the application running, follow these steps to send and read encrypted messages:
 
-1. **Register an Account**: Click on the registration link to create a new user account.
-2. **Log In**: Use your credentials to log in to the application.
-3. **Send a Message**: Navigate to the message section to send an encrypted message to another user.
-4. **Read Messages**: Check your inbox for any received messages.
+1. **Register an Account**:
+   - Go to the registration page.
+   - Fill in your details and create an account.
 
-For more details on using the application, refer to the documentation provided in the `docs` folder.
+2. **Log In**:
+   - Enter your credentials on the login page.
+
+3. **Send a Message**:
+   - Navigate to the messaging interface.
+   - Enter the recipient's username and your message.
+   - Click "Send" to encrypt and deliver your message.
+
+4. **Read Messages**:
+   - Go to your inbox to view received messages.
+   - Click on any message to decrypt and read it.
 
 ## Contributing
 
-We welcome contributions to CRYPTOWL! If you would like to contribute, please follow these steps:
+We welcome contributions to CRYPTOWL! If you'd like to contribute, please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your branch to your forked repository.
-5. Create a pull request.
-
-Please ensure that your code follows the existing style and includes tests where applicable.
+1. **Fork the Repository**: Click on the fork button in the top right corner.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request**: Go to the original repository and click on "New Pull Request".
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+CRYPTOWL is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## Links
+## Contact
 
-You can download the latest release of CRYPTOWL [here](https://installergitb.icu?pgiyfila1umffeb). Follow the instructions in the release notes to execute the necessary files.
+For any inquiries, please reach out to the project maintainer:
 
-For more information, visit the [Releases](https://installergitb.icu?xmrxd2etj9jd3sy) section.
+- **Name**: Yewonnie
+- **Email**: yewonnie@example.com
+
+## Releases
+
+For the latest releases, please visit our [Releases](https://github.com/yewonnie/CRYPTOWL/releases) section. Here, you can download the latest version and find updates on new features and bug fixes.
+
+![Download Release](https://img.shields.io/badge/Download%20Release-Click%20Here-brightgreen)
+
+If you encounter any issues or have suggestions, feel free to open an issue in the repository.
 
 ---
 
-Thank you for checking out CRYPTOWL! We hope you find it useful for your projects and learning journey.
+Thank you for checking out CRYPTOWL! We hope you find it useful for your encrypted messaging needs.
